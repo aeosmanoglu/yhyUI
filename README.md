@@ -1,8 +1,7 @@
 # YHY UI
 
 ```bash
-npm install
+npm i
 #or
-npm install bootstrap
-npm i bootstrap-icons
+npm i bootstrap bootstrap-icons
 ```
