@@ -2,6 +2,15 @@
 @import "../node_modules/bootstrap/scss/functions";
 
 // Include any default variable overrides here
+$spacer: 1rem;
+$spacers: (
+    0: 0,
+    1: $spacer,
+    2: $spacer * 2,
+    3: $spacer * 3,
+    4: $spacer * 4,
+    5: $spacer * 5,
+);
 $enable-rounded: false;
 $enable-shadows: true;
 
@@ -12,13 +21,13 @@ $yellow: #f1c21b;
 $body-bg: #f8f9fa;
 $input-bg: #fff;
 
-$card-spacer-y: 1.5rem;
-$card-spacer-x: 1.5rem;
-$card-title-spacer-y: 1.5rem;
+$card-spacer-y: $spacer * 2;
+$card-spacer-x: $spacer * 2;
+$card-title-spacer-y: $spacer * 1.5;
 $card-box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
 $card-height: 100%;
 
-$table-cell-padding-x: 1rem;
+$table-cell-padding-x: $spacer;
 
 // Rest of Configuration
 @import "../node_modules/bootstrap/scss/variables";
