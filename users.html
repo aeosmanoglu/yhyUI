@@ -6,8 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Abuzer Emre Osmanoğlu, Nazenin Şahin">
+    <!--Styles-->
     <link rel="stylesheet" href="scss/custom.css">
     <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/node_modules/datatables.net-bs5/css/dataTables.bootstrap5.min.css">
+    <!--Favicon-->
     <link rel="apple-touch-icon" sizes="57x57" href="assets/favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="assets/favicon/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="assets/favicon/apple-icon-72x72.png">
@@ -137,13 +140,28 @@
                 <div class="col">
                     <div class="card">
                         <div class="card-body">
-                            <h4 class="card-title">Parolalar</h4>
-                            <p class="card-text">Üzerinizde hiç parola bulunmamaktadır.</p>
-                            <table class="table table-lg table-hover table-responsive align-middle">
+                            <h4 class="card-title">Kayıtlı Kullanıcılar</h4>
+                            <p class="card-text">Hiç katıylı kullanıcı yok.</p>
+                            <table class="table table-lg table-hover table-responsive align-middle table-bordered"
+                                id="datatable">
+                                <thead>
+                                    <tr>
+                                        <td>Tarih Zaman</td>
+                                        <td>Kullanıcı Adı</td>
+                                        <td>Lorem, ipsum.</td>
+                                        <td>Lorem, ipsum.</td>
+                                        <td>Açıklama</td>
+                                        <td></td>
+                                    </tr>
+                                </thead>
                                 <tbody>
                                     <tr>
-                                        <td scope="row">01.01.1970 11:22:33</td>
+                                        <td>01.01.1970 11:22:33</td>
                                         <td>KHOBSNBT00</td>
+                                        <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, cumque.
+                                        </td>
+                                        <td>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid, commodi?
+                                        </td>
                                         <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
                                             nesciunt magnam labore soluta eaque nobis harum, aliquam temporibus deserunt
                                             reiciendis officiis dolor, culpa, libero voluptas repellendus? Totam nostrum
@@ -169,8 +187,11 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td scope="row">01.01.1970 11:22:33</td>
+                                        <td>01.01.1970 11:22:33</td>
                                         <td>KHOBSNBT01</td>
+                                        <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab, modi?</td>
+                                        <td>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit, debitis!
+                                        </td>
                                         <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque
                                             mollitia neque officiis magnam culpa inventore maxime blanditiis.
                                             Consequuntur
@@ -194,8 +215,11 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td scope="row">01.01.1970 11:22:33</td>
+                                        <td>01.01.1970 11:22:33</td>
                                         <td>KHOBSNBT01</td>
+                                        <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, nobis.</td>
+                                        <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae, sed.
+                                        </td>
                                         <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio
                                             architecto sunt nisi sit velit provident qui quo soluta dignissimos, sequi
                                             beatae quos obcaecati minus tempora eum eveniet, ducimus libero facere.</td>
@@ -225,6 +249,10 @@
     </div>
 </body>
 
+<script src="/node_modules/jquery/dist/jquery.min.js"></script>
+<script src="/node_modules/datatables.net/js/jquery.dataTables.min.js"></script>
+<script src="/node_modules/datatables.net-bs5/js/dataTables.bootstrap5.min.js"></script>
 <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="/assets/datatable/custom.js"></script>
 
 </html>

@@ -14,12 +14,26 @@ $spacers: (
 $enable-rounded: false;
 $enable-shadows: true;
 
+$white: #fff;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+$light: $gray-100;
+$gray: $gray-600;
+$gray-dark: $gray-800;
+$dark: $gray-900;
+
 $blue: #0f62fe;
 $red: #da1e28;
 $green: #24a148;
 $yellow: #f1c21b;
-$body-bg: #f8f9fa;
-$input-bg: #fff;
+$body-bg: $gray-100;
 
 $card-spacer-y: $spacer * 2;
 $card-spacer-x: $spacer * 2;
@@ -42,6 +56,7 @@ $table-cell-padding-x: $spacer;
 @import "../node_modules/bootstrap/scss/grid";
 @import "../node_modules/bootstrap/scss/forms";
 @import "../node_modules/bootstrap/scss/buttons";
+@import "../node_modules/bootstrap/scss/pagination";
 @import "../node_modules/bootstrap/scss/nav";
 @import "../node_modules/bootstrap/scss/navbar";
 @import "../node_modules/bootstrap/scss/card";
@@ -58,6 +73,16 @@ td {
         "Courier New", monospace;
     font-size: 0.8rem;
 }
+
+thead {
+    background-color: $gray-900;
+}
+
+thead td {
+    color: $gray-100;
+    font-weight: 600;
+}
+
 .bi {
     font-size: 1.2rem;
 }
