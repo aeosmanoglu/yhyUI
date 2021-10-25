@@ -55,7 +55,7 @@ $table-cell-padding-x: $spacer;
 @import "../node_modules/bootstrap/scss/utilities/api";
 // Additional custom code here
 // Table
-td {
+table#datatable td {
     font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
     font-size: 0.8rem;
 }
