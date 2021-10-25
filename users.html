@@ -67,78 +67,15 @@
 
     <div class="container my-5">
         <!--Title-->
-        <h1 class="mb-2">Kullanıcı Yönetimi</h1>
+        <div class="d-flex justify-content-between align-items-baseline mb-2">
+            <h1>Kullanıcı Yönetimi</h1>
+            <a class="btn btn-outline-dark scroll" href="#newUsers">
+                <i class="bi bi-plus me-1"></i>Yeni kullanıcı ekle
+            </a>
+        </div>
 
         <div class="vstack gap-2">
-            <!--Add User-->
-            <div class="row row-cols-1 g-2">
-                <div class="col">
-                    <div class="card">
-                        <div class="card-body">
-                            <!--Card Title-->
-                            <h4 class="card-title">Yeni Kullanıcı Ekle</h4>
-                            <form action="">
-                                <div class="vstack gap-1">
-                                    <div class="hstack gap-1">
-                                        <div class="col">
-                                            <!--Selector-->
-                                            <div class="form-floating">
-                                                <select id="floatingSelect" class="form-select"
-                                                    aria-label="floating label select example">
-                                                    <option value="1">Bir</option>
-                                                    <option value="2">İki</option>
-                                                    <option value="3">Üç</option>
-                                                    <option value="4">Dört</option>
-                                                </select>
-                                                <label for="floatingSelect">Sayı seçin</label>
-                                            </div>
-                                        </div>
-                                        <div class="col">
-                                            <!--Selector-->
-                                            <div class="form-floating">
-                                                <select id="floatingSelect1" class="form-select"
-                                                    aria-label="floating label select example">
-                                                    <option value="1">Bir</option>
-                                                    <option value="2">İki</option>
-                                                    <option value="3">Üç</option>
-                                                    <option value="4">Dört</option>
-                                                </select>
-                                                <label for="floatingSelect1">Sayı seçin</label>
-                                            </div>
-                                        </div>
-                                        <div class="col">
-                                            <!--Selector-->
-                                            <div class="form-floating">
-                                                <select id="floatingSelect2" class="form-select"
-                                                    aria-label="floating label select example">
-                                                    <option value="1">Bir</option>
-                                                    <option value="2">İki</option>
-                                                    <option value="3">Üç</option>
-                                                    <option value="4">Dört</option>
-                                                </select>
-                                                <label for="floatingSelect2">Sayı seçin</label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!--Text Field-->
-                                    <div class="form-floating">
-                                        <textarea class="form-control" placeholder="Lütfen bir açıklama giriniz"
-                                            id="floatingTextarea" style="height: 8rem"></textarea>
-                                        <label for="floatingTextarea">Açıklama</label>
-                                    </div>
-                                    <!--Button-->
-                                    <div class="d-flex justify-content-end">
-                                        <button class="btn btn-lg btn-primary align-self-end">
-                                            Ekle<i class="bi bi-plus ms-5 fs-4"></i>
-                                        </button>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--.Add User-->
+            <!--List-->
             <div class="row">
                 <div class="col">
                     <div class="card">
@@ -209,6 +146,74 @@
                     </div>
                 </div>
             </div>
+            <!--Add User-->
+            <div class="row row-cols-1 g-2">
+                <div class="col" id="newUsers">
+                    <div class="card">
+                        <div class="card-body">
+                            <!--Card Title-->
+                            <h4 class="card-title">Yeni Kullanıcı Ekle</h4>
+                            <form action="">
+                                <div class="vstack gap-1">
+                                    <div class="hstack gap-1">
+                                        <div class="col">
+                                            <!--Selector-->
+                                            <div class="form-floating">
+                                                <select id="floatingSelect" class="form-select"
+                                                    aria-label="floating label select example">
+                                                    <option value="1">Bir</option>
+                                                    <option value="2">İki</option>
+                                                    <option value="3">Üç</option>
+                                                    <option value="4">Dört</option>
+                                                </select>
+                                                <label for="floatingSelect">Sayı seçin</label>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <!--Selector-->
+                                            <div class="form-floating">
+                                                <select id="floatingSelect1" class="form-select"
+                                                    aria-label="floating label select example">
+                                                    <option value="1">Bir</option>
+                                                    <option value="2">İki</option>
+                                                    <option value="3">Üç</option>
+                                                    <option value="4">Dört</option>
+                                                </select>
+                                                <label for="floatingSelect1">Sayı seçin</label>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <!--Selector-->
+                                            <div class="form-floating">
+                                                <select id="floatingSelect2" class="form-select"
+                                                    aria-label="floating label select example">
+                                                    <option value="1">Bir</option>
+                                                    <option value="2">İki</option>
+                                                    <option value="3">Üç</option>
+                                                    <option value="4">Dört</option>
+                                                </select>
+                                                <label for="floatingSelect2">Sayı seçin</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--Text Field-->
+                                    <div class="form-floating">
+                                        <textarea class="form-control" placeholder="Lütfen bir açıklama giriniz"
+                                            id="floatingTextarea" style="height: 8rem"></textarea>
+                                        <label for="floatingTextarea">Açıklama</label>
+                                    </div>
+                                    <!--Button-->
+                                    <div class="d-flex justify-content-end">
+                                        <button class="btn btn-lg btn-primary align-self-end">
+                                            Ekle<i class="bi bi-plus ms-5 fs-4"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </body>
@@ -218,5 +223,6 @@
 <script src="/node_modules/datatables.net-bs5/js/dataTables.bootstrap5.min.js"></script>
 <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 <script src="/assets/datatable/custom.js"></script>
+<script src="/custom.js"></script>
 
 </html>
