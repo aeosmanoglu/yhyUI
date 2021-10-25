@@ -35,7 +35,8 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
             <a href="/" class="navbar-brand">Yönetici Hesapları Yönetimi</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -66,20 +67,131 @@
 
     <div class="container my-5">
         <!--Title-->
-        <h1 class="mb-2">Yetki Yönetimi</h1>
+        <div class="d-flex justify-content-between align-items-baseline mb-2">
+            <h1>Yetki Yönetimi</h1>
+            <a class="btn btn-lg btn-primary scroll" href="#newUsers">
+                <i class="bi bi-arrow-down me-1"></i>Yetki bekleyen kullanıcılar var!
+            </a>
+        </div>
 
         <div class="row row-cols-1 g-2">
             <div class="col">
                 <div class="card">
                     <div class="card-body">
-                        <h4 class="card-title">Yetki Bekleyen Kullanıcılar</h4>
+                        <h4 class="card-title">Yetkili Kullanıcılar</h4>
+                        <table class="table table-hover table-responsive align-middle table-bordered" id="datatable">
+                            <thead>
+                                <tr>
+                                    <td>Tarih Zaman</td>
+                                    <td>Ad Soyad</td>
+                                    <td>Açıklama</td>
+                                    <td></td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>01.01.1970 11:22:33</td>
+                                    <td>J.Bnb.Abuzer Emre OSMANOĞLU</td>
+                                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi illo architecto
+                                        rerum recusandae sapiente possimus in. Tenetur aspernatur voluptatibus labore
+                                        expedita. Reprehenderit deleniti optio suscipit odit officia hic tempora quia.
+                                    </td>
+                                    <td><button class="btn btn-sm btn-outline-danger">Sil</button></td>
+                                </tr>
+                                <tr>
+                                    <td>01.01.1970 11:22:33</td>
+                                    <td>John Doe</td>
+                                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima voluptate
+                                        possimus quaerat culpa! Temporibus quidem officia dignissimos dolorem labore
+                                        voluptatibus illum ducimus quasi maxime ratione obcaecati nesciunt, alias est
+                                        beatae?</td>
+                                    <td><button class="btn btn-sm btn-outline-danger">Sil</button></td>
+                                </tr>
+                                <tr>
+                                    <td>01.01.1970 11:22:33</td>
+                                    <td>John Doe</td>
+                                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi odio voluptatibus
+                                        laudantium temporibus error iure harum repellat quis magnam neque, beatae sint
+                                        sit earum dolorem nihil qui ea. Officia, quis?</td>
+                                    <td><button class="btn btn-sm btn-outline-danger">Sil</button></td>
+                                </tr>
+                                <tr>
+                                    <td>01.01.1970 11:22:33</td>
+                                    <td>John Doe</td>
+                                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, optio illum!
+                                        Ratione necessitatibus modi tempora maxime, eaque quae veniam! Magnam qui
+                                        aspernatur delectus mollitia. Quaerat dolorum ab sequi libero sit.</td>
+                                    <td><button class="btn btn-sm btn-outline-danger">Sil</button></td>
+                                </tr>
+                                <tr>
+                                    <td>01.01.1970 11:22:33</td>
+                                    <td>John Doe</td>
+                                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum rem quia sed
+                                        adipisci! Labore eveniet sunt soluta, nesciunt eaque officia earum eos unde
+                                        alias, neque quidem. Hic molestias quia et?</td>
+                                    <td><button class="btn btn-sm btn-outline-danger">Sil</button></td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>
-            <div class="col">
+
+            <div class="col" id="newUsers">
                 <div class="card">
                     <div class="card-body">
-                        <h4 class="card-title">Yetki Verdiğim Kullanıcılar</h4>
+                        <h4 class="card-title">Yetki Bekleyen Kullanıcılar</h4>
+                        <table class="table table-hover table-bordered align-middle table-responsive">
+                            <tbody>
+                                <tr>
+                                    <td>J.Bnb.Abuzer Emre OSMANOĞLU</td>
+                                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, quam natus
+                                        perspiciatis minima placeat saepe ad necessitatibus eaque, nesciunt explicabo
+                                        recusandae ab quas illo esse repudiandae! Repellat, voluptate dolorem. Ipsam.
+                                    </td>
+                                    <td>
+                                        <i class="bi bi-check2-circle text-success"></i>
+                                        <i class="bi bi-circle"></i>
+                                        <i class="bi bi-circle"></i>
+                                    </td>
+                                    <td>
+                                        <button class="btn btn-sm btn-outline-primary">Yetkilendir</button>
+                                        <button class="btn btn-sm btn-outline-dark">Geri Al</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Jhon Doe</td>
+                                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda sed sequi
+                                        atque voluptatem officiis tenetur facilis nesciunt laborum quos, ab, omnis eum
+                                        nam accusantium distinctio, voluptates ipsam perferendis maxime dolorem!</td>
+                                    <td>
+                                        <i class="bi bi-circle"></i>
+                                        <i class="bi bi-circle"></i>
+                                        <i class="bi bi-circle"></i>
+                                    </td>
+                                    <td>
+                                        <button class="btn btn-sm btn-outline-primary">Yetkilendir</button>
+                                        <button class="btn btn-sm btn-outline-dark">Geri Al</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Jane Doe</td>
+                                    <td>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod architecto ipsam
+                                        consequuntur beatae eius dicta, recusandae blanditiis, tempore vero non
+                                        voluptatum inventore ipsa. Provident excepturi laborum debitis vitae sequi et.
+                                    </td>
+                                    <td>
+                                        <i class="bi bi-check2-circle text-success"></i>
+                                        <i class="bi bi-check2-circle text-success"></i>
+                                        <i class="bi bi-circle"></i>
+                                    </td>
+                                    <td>
+                                        <button class="btn btn-sm btn-outline-primary">Yetkilendir</button>
+                                        <button class="btn btn-sm btn-outline-dark">Geri Al</button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>
@@ -92,5 +204,6 @@
 <script src="/node_modules/datatables.net-bs5/js/dataTables.bootstrap5.min.js"></script>
 <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 <script src="/assets/datatable/custom.js"></script>
+<script src="/custom.js"></script>
 
 </html>
