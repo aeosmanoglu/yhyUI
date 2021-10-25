@@ -9739,4 +9739,9 @@ thead td {
 .navbar a.nav-link {
   margin: 0 1rem;
 }
+
+code {
+  background-color: #e9ecef;
+  padding: .5rem;
+}
 /*# sourceMappingURL=custom.css.map */
